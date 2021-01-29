@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Document Similarity </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        body{
+            background:linear-gradient(rgba(255,255,255,0.77),rgba(255,255,255,0.77)), url({{url_for('static', filename='images/similarity.jpg' )}});
+            }
+        .center{
+            margin-left:auto;
+            margin-right:auto;
+         }
+        td{
+            padding: 30px;
+           }
+        textarea {font-size: 18px;}
+        .button {
+          display: inline-block;
+          padding: 15px 25px;
+          font-size: 24px;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #ffad33;
+          border: none;
+          border-radius: 15px;
+        }
+        .button:hover {background-color: #e68a00}
+        }
+    </style>
+</head>
+<script>
+function myFunction() {
+var text1= $('#text1').val();
+var text2= $('#text2').val();
+  $.ajax({
+              url: "/join",
+              type: "POST",
+              data: {text1:text1,
+              text2:text2}
+          }).done(function(response) {
+            var html= "<br><br><br><p> <b> Cosine Similarity Score : <b><p>";
+            response =response.result;
+                 $.each(response,function(key,val){
+                 console.log(val);
+                    html = '<h2 style="text-align:center">Cosine Similarity Score: '+val+"</h2>"
+                });
+                html +="<br>";
+                $(".show-data").html(html);
+            });
+};
+  </script>
+<body>
+    <h1 style="text-align:center">DOCUMENT SIMILARITY</h1>
+    <table class = "center">
+        <tr>
+            <td>
+                <textarea id="text1" name="text1" rows = "15" cols = "50" placeholder="Enter first text here"></textarea>
+            </td>
+            <td>
+                <textarea id = "text2" name="text2" rows = "15" cols = "50" placeholder = "Enter second text here"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan = "2" style="text-align:center">
+                <button id="clicked" class = "button" onclick="myFunction()"> Compare </button>
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="show-data" >
+    </div>
+</body>
+</html>
