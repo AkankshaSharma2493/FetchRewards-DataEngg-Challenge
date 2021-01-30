@@ -38,7 +38,8 @@ What type of data structures should be used?
 3. Will open webpage
 4. Enter 2 texts and click compare
 
-## Library used: Flask for creating web app
+## Library used: 
+"Flask" for creating web app
 
 
 
