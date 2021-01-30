@@ -27,8 +27,8 @@ What metric do you use to assign a numerical value to the similarity?
 
 What type of data structures should be used?
 > I used the following data structures:
->> "list" in form of nested lists and list comprehension for text processing and for storing stop words 
->> "sets" to calculate document frequency
+>> "list" in form of nested lists and list comprehension for text processing and for storing stop words <br/>
+>> "sets" to calculate document frequency <br/>
 >> "dictionaries" to store tf-idf values.
 
 # How to execute?
