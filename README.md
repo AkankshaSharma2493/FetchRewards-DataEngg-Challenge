@@ -34,8 +34,8 @@ What type of data structures should be used?
 # How to execute?
 1. Download Zip file by clicking dropdown button of "Code" on the top right of this page.
 2. Extract files
-3. Run api.py 
-a. Open terminal
+3. Run api.py <br/>
+a. Open terminal <br/>
 b. Type the following commands
 ```
 cd <path/to/the/downloaded_folder>
