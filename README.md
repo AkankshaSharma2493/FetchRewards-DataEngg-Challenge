@@ -7,7 +7,7 @@ Link to [My Resume](https://github.com/AkankshaSharma2493/Resume/blob/main/Resum
 This challenge is focused on finding the similarity between two texts. The objective is to write a program that takes as inputs two texts and uses a metric to determine how similar they are. Documents that are exactly the same should get a score of 1, and documents that don’t have any words in common should get a score of 0.
 
 # Constraint
-This challenge allowed the use of any language, but it was required to build solution without the use of any relevant text processing libraries like scikit-learn, NLTK, spaCy, numpy.
+This challenge allowed the use of any language, but it was required to build solution without the use of any relevant text processing libraries like scikit-learn, NLTK, spaCy, numpy. However, Flask is allowed to create web app.
 
 # Deliverable
 Created a web app using Flask web framework that allows users to input 2 texts and generates a Cosine Similarity score between 0 and 1.
@@ -32,7 +32,12 @@ What type of data structures should be used?
 >> "dictionaries" to store tf-idf values.
 
 # How to execute?
-Run apy.py file and 
+1. Download all files.
+2. Run api.py
+3. Will open webpage
+4. Enter 2 texts and click compare
+
+# Library used: Flask for creating web app
 
 
 
