@@ -20,13 +20,16 @@ Which words should matter in the similarity comparison?
 > The commonly occuring stop words are removed as they misrepresent similarity score by inadvertently increasing it. 
 
 Do you care about the ordering of words?
-> For this particular challenge, I did not take into account the ordering of words as  
-
+> For this particular challenge, I did not take the ordering of words into account. This is because the size of given samples is small and I assumed that each new input would also fall in the similar range. The small text size makes it less likely for both the texts to have N-grams(sequence of words) in common. This will lead to distorted "tf-idf" vectors, translating to high dissimilarity between texts despite them having common words. 
+    
 What metric do you use to assign a numerical value to the similarity?
-> I used Cosine similarity that takes the angle between two non-zero vectors and calculates the cosine of that angle, which is known as the similarity between the two vectors. This similarity score ranges from 0 to 1, with 0 being the lowest (the least similar) and 1 being the highest (the most similar).
+> I used cosine similarity that takes the angle between the calculated "tf-idf" vectors and computes the cosine of that angle, which refers to the similarity between two texts. This similarity score ranges from 0 to 1, with 0 being the lowest (the least similar) and 1 being the highest (the most similar).
 
 What type of data structures should be used?
-> I used "list" in form of nested lists, list comprehension for text processing and for storing stop words, "sets" to calculate document frequency, "dictionaries" to store tf-idf values.
+> I used the following data structures:
+>> "list" in form of nested lists and list comprehension for text processing and for storing stop words, 
+>> "sets" to calculate document frequency, 
+>> "dictionaries" to store tf-idf values.
 
 # How to execute?
 Run apy.py file and 
