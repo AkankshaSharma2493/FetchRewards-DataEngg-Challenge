@@ -32,11 +32,17 @@ What type of data structures should be used?
 >> "dictionaries" to store tf-idf values.
 
 # How to execute?
-1. Download all files.
-2. Run api.py
-3. Click on the link generated on terminal (127.0.0.1:5000)
-3. Will open webpage
-4. Enter 2 texts and click compare
+1. Download Zip file by clicking dropdown button of "Code" on the top right of this page.
+2. Extract files
+3. Run api.py 
+a. Open terminal
+b. Type the following commands
+```
+cd <path/to/the/downloaded_folder>
+python api.py
+```
+4. Click on the link generated on terminal (127.0.0.1:5000). It will open a webpage
+5. Enter 2 texts on webpage and click "Compare" button to get Similarity score 
 
 ## Library used: 
 "Flask" for creating web app
