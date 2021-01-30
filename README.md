@@ -1,6 +1,6 @@
 # Fetch Rewards Coding Exercise - Data Engineer
 Author: Akanksha Sharma <br/>
-Email:  akankshasharma2493@gmail.com <br/>
+Email:   akankshasharma2493@gmail.com <br/>
 Link to [My Resume](https://github.com/AkankshaSharma2493/Resume/blob/main/Resume_Akanksha.pdf)
 
 # Description
