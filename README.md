@@ -41,5 +41,10 @@ What type of data structures should be used?
 ## Library used: 
 "Flask" for creating web app
 
+## Environment used:
+PyCharm 2020.3.2 
+Python 3.7
+Flask 1.1.2
+
 
 
