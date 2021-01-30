@@ -1,7 +1,7 @@
 # Fetch Rewards Coding Exercise - Data Engineer
 Author: Akanksha Sharma <br/>
 Email:   akankshasharma2493@gmail.com <br/>
-Link to [My Resume](https://github.com/AkankshaSharma2493/Resume/blob/main/Resume_Akanksha.pdf)
+
 
 # Description
 This challenge is focused on finding the similarity between two texts. The objective is to write a program that takes as inputs two texts and uses a metric to determine how similar they are. Documents that are exactly the same should get a score of 1, and documents that don’t have any words in common should get a score of 0.
