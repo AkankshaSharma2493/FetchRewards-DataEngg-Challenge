@@ -34,6 +34,7 @@ What type of data structures should be used?
 # How to execute?
 1. Download all files.
 2. Run api.py
+3. Click on the link generated on terminal (127.0.0.1:5000)
 3. Will open webpage
 4. Enter 2 texts and click compare
 
